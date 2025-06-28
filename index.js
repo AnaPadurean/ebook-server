@@ -12,6 +12,7 @@ console.log('Service Account Source:', serviceAccount);
 try {
   admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
+    storageBucket: "ebookappauthentication.firebasestorage.app"
   });
   console.log('Firebase Admin SDK initialized successfully');
 } catch (err) {
